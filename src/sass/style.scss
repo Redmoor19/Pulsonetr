@@ -4,6 +4,10 @@
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/titles';
+@import 'blocks/forms';
+@import 'blocks/carousel';
 @import 'blocks/media';
 
 *{
@@ -11,6 +15,7 @@
 }
 
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
 }

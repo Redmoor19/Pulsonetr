@@ -4,6 +4,28 @@
             font-size: 16px;
         }
     }
+
+    .consultation {
+        min-height: auto;
+        max-height: 680px;
+        .title_left {
+            text-align: center;
+        }
+        &__description {
+            text-align: center;
+            margin-top: 25px;
+        }
+    }
+
+    .feed-form {
+        margin: 0 auto;
+    }
+
+    .carousel {
+        .next, .prev {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -62,6 +84,19 @@
             }
         }
     }
+
+    .consultation {
+        max-height: 800px;
+    }
+
+    .carousel {
+        .tns-outer {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -97,4 +132,5 @@
             max-width: 400px
         }
     }
+
 }

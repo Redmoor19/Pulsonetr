@@ -27,6 +27,37 @@
         }
     }
 }
+@media screen and (max-width: 991px) {
+    .footer {
+        &__info {
+            display: block;
+            transform: none;
+            left: 0;
+            top: auto;
+            bottom: -180px;
+            width: 100%;
+            height: 180px;
+            padding-top:0 20px;
+        }
+        &__address {
+            margin-top: 25px;
+        }
+        &__phone {
+            margin-top: 10px;
+        }
+        &__social {
+            margin-top: 15px;
+            width: 200px;
+            a {
+                width: 40px;
+                height: 40px;
+                i {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 767px) {
 
@@ -152,6 +183,14 @@
     .catalog {
         &__tab {
             font-size: 12px;
+        }
+    }
+
+    .modal {
+        &__close {
+            font-size: 51px;
+            right: 0;
+            top: 3px;
         }
     }
 

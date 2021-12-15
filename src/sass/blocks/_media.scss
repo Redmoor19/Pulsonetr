@@ -28,10 +28,6 @@
     }
 }
 
-@media screen and (max-width: 991px) {
-
-}
-
 @media screen and (max-width: 767px) {
 
     .header {
@@ -101,6 +97,20 @@
     .catalog {
         &__tabs {
             padding: 0 10px;
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 70px;
+        }
+    }
+
+    .feedback {
+        &-item {
+            flex-direction: column;
+            &__content {
+                text-align: center;
+                margin-left: 0;
+                width: 100%;
+            }
         }
     }
 }
@@ -145,4 +155,22 @@
         }
     }
 
+}
+
+@media screen and (max-width: 400px) {
+    .catalog {
+        &__content {
+            margin-top: 20px;
+        }
+        &__tabs {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__tab {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }

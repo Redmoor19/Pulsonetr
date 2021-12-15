@@ -46,10 +46,10 @@
                         Ответим на все вопросы
                     </div>
                 </div>
-                <button class="button button_main">Заказать консультацию</button>
+                <button onclick="document.location='#consultation_link'" class="button button_main">Заказать консультацию</button>
                 <div class="promo__link">
                     или
-                    <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    <a href="#pulsometr_catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
             </div>
             
@@ -83,7 +83,7 @@
         </div>
     </section>
 
-    <section class="consultation">
+    <section id="consultation_link" class="consultation">
         <div class="container">
             <h2 class="title_left">Получите бесплатную консультацию по подбору пульсометра</h2>
             <div class="consultation__description">
@@ -112,7 +112,7 @@
         </div>
     </section>
 
-    <section class="catalog">
+    <section id="pulsometr_catalog" class="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
@@ -361,7 +361,57 @@
             
         </div>
     </section>
-
+    <section class="feedback">
+        <div class="container">
+            <h2 class="title">отзывы клиентов</h2>
+            <div class="feedback__wrapper">
+                <div class="feedback-item">
+                    <img src="img/Irina.png" alt="portrait" class="feedback-item__image">
+                    <div class="feedback-item__content">
+                        <div class="feedback-item__name">Ирина Иванченко</div>
+                        <div class="feedback-item__info">2 полумарафона</div>
+                        <div class="feedback-item__text">
+                            Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.
+                            Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
+                            <br><br>
+                            Новые цели - новый гаджет!
+                            <br><br>
+                            Спасибо, RunSmart!
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="feedback-item">
+                    <img src="img/Ivan.png" alt="portrait" class="feedback-item__image">
+                    <div class="feedback-item__content">
+                        <div class="feedback-item__name">Иван Сёмочкин</div>
+                        <div class="feedback-item__info">1 полумарафон</div>
+                        <div class="feedback-item__text">
+                            Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе    делал. Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
+                            <br><br>
+                            С ними подготовился к своему первому полумарафону! Спасибо!!!
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="feedback-item">
+                    <img src="img/Yulia.png" alt="portrait" class="feedback-item__image">
+                    <div class="feedback-item__content">
+                        <div class="feedback-item__name">Юлия Дашкина</div>
+                        <div class="feedback-item__info">2 полумарафона</div>
+                        <div class="feedback-item__text">
+                            Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
+                            <br><br>
+                            Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
+                            <br><br>
+                            Спасибо!!!
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

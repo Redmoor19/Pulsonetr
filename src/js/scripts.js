@@ -48,18 +48,60 @@ document.querySelector('.next').addEventListener('click', function () {
 
     $('[data-modal=consultation]').on('click', function() {
       $('.overlay, #consultation').fadeIn('slow');
-    })
+    });
 
     $('.modal__close').on('click', function() {
       $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
-    })
+    });
 
     $('.button_catalog').each(function(i) {
       $(this).on('click', function() {
         $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
         $('.overlay, #order').fadeIn('slow');
       })
-    })
+    });
+
+    //Validation
+    const validate = function (form) {
+      $(form).validate({
+        rules: {
+          name: {
+            required: true,
+            minlength: 2
+          },
+          phone: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true
+          },
+        },
+        messages: {
+          name: {
+            required: "Поле имени необходимо для ввода!",
+            minlength: jQuery.validator.format('Имя должно содержать как минимум {0} символа')
+          },
+          phone: {
+            required: "Поле телефона необходимо для ввода!"
+          },
+          email: {
+            required: "Поле электронной почты неоходимо для ввода!",
+            email: "Некоректный формат электронной почты"
+          }
+        }
+      });
+    }
+
+    validate('#consultation form');
+    validate('#consultation-form')
+    validate('#order form')
+
+    //Masked input
+
+    $('input[name=phone]').mask('9 (999) 999-99-99')
+
+
 
   });
 })(jQuery);

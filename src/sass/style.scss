@@ -1,5 +1,11 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import 'libs/tiny-slider';
+
 @import 'base/variables';
+@import 'base/animations';
 @import 'base/mixins';
+
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
@@ -12,6 +18,7 @@
 @import 'blocks/feedback';
 @import 'blocks/footer';
 @import 'blocks/modals';
+@import 'blocks/pageup';
 @import 'blocks/media';
 
 *{
@@ -19,6 +26,8 @@
     img, i{
         caret-color: transparent;
     }
+
+    scroll-behavior: smooth;
 }
 
 .container {

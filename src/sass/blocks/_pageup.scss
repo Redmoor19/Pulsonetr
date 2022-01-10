@@ -1,0 +1,15 @@
+.page_up {
+    color: $main-color;
+    display: none;
+    font-size: 50px;
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    &:hover {
+        color: $main-color;
+    }
+    i:hover {
+        border-radius: 100%;
+        background-color: #fff;
+    }
+}

@@ -39,4 +39,22 @@
             color: #ff0000
         }
     }
+    &__icon_animatedheart {
+        animation-name: heartbeat;
+        animation-duration: 0.9s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    &__icon_animatedshoe {
+        animation-name: shoe-rotate;
+        animation-duration: 0.9s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    &__icon_animatedcup {
+        animation-name: cup;
+        animation-duration: 0.9s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
 }

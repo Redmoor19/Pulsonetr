@@ -140,6 +140,9 @@
             color: #555555;
             transition: 0.5s all;
             list-style-type: none;
+            ul {
+                padding-left: 0;
+            }
             li {
                 position: relative;
                 margin-bottom: 20px;
